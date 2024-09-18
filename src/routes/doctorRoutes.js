@@ -2,18 +2,18 @@ const express = require("express");
 const router = express.Router();
 const doctorController = require("../controllers/doctorController");
 
-router.post("/drawings", doctorController.createDrawing);
+router.post("/drawing", doctorController.createDrawing);
 
 // Get all drawings
 router.get("/drawings", doctorController.getAllDrawings);
 
 // Get a specific drawing by ID
-router.get("/:id", doctorController.getDrawingById);
+router.get("/drawing/:id", doctorController.getDrawingById);
 
 // Update a drawing
-router.put("/:id", doctorController.updateDrawing);
+router.put("/drawing/:id", doctorController.updateDrawing);
 
 // Delete a drawing
-router.delete("/:id", doctorController.deleteDrawing);
+router.delete("/drawing/:id", doctorController.deleteDrawing);
 
 module.exports = router;
