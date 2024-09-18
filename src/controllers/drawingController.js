@@ -1,4 +1,4 @@
-const Drawing = require("../models/Doctor");
+const Drawing = require("../models/Drawing");
 
 exports.createDrawing = async (req, res, next) => {
   try {
@@ -12,13 +12,10 @@ exports.createDrawing = async (req, res, next) => {
 
 // Get all drawings
 exports.getAllDrawings = async (req, res, next) => {
-  console.log("🚀 ~ exports.getAllDrawings= ~ req, res, next:", req, res, next)
   try {
     const drawings = await Drawing.find();
-    console.log("🚀 ~ exports.getAllDrawings= ~ drawings:", drawings)
     res.json(drawings);
   } catch (error) {
-    console.log("🚀 ~ exports.getAllDrawings= ~ error:", error)
     next(error);
   }
 };

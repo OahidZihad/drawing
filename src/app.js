@@ -4,7 +4,7 @@ const cors = require("cors");
 const { errorHandler } = require("./middleware/errorHandler");
 
 // Routes
-const doctorRoutes = require("./routes/doctorRoutes");
+const drawingRoutes = require("./routes/drawingRoutes");
 const app = express();
 
 // Middleware
@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(errorHandler);
 
 // Routes
-app.use("/api", doctorRoutes);
+app.use("/api", drawingRoutes);
 
 // Error handling middleware
 app.use((err, req, res, next) => {
