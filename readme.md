@@ -1,4 +1,4 @@
-# Whiteboard App
+# Whiteboard Drawing App - BE
 
 A Whiteboard App backend built with Express.js and MongoDB. It provides RESTful API endpoints to create, retrieve, update, and delete drawings.
 
@@ -30,7 +30,17 @@ A Whiteboard App backend built with Express.js and MongoDB. It provides RESTful 
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/whiteboard-app.git
-   cd whiteboard-app
+   https://github.com/OahidZihad/drawing.git
    ```
-# drawing
+
+2. **Install the packages:**
+
+   ```bash
+   npm install
+   ```
+
+2. **Run the server:**
+
+   ```bash
+   npm run dev
+   ```
