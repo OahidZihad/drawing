@@ -44,3 +44,4 @@ A Whiteboard App backend built with Express.js and MongoDB. It provides RESTful 
    ```bash
    npm run dev
    ```
+Server will run at port 5000
